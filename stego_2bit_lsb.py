@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
  
-#binary encoder
+#binary encoder to encode the string into binay sequence
 text = raw_input("enter text: ")
 print(len(text))
 ascii = ""
@@ -15,14 +15,15 @@ print(ascii)
 
 
 
-#pixel value
+# opening cover image
 image = cv2.imread("C:\Users\User\Desktop\download.jpg")
 size = image.shape
 print(size)
 
-# creating a blank image
+# creating a blank stego image
 enc_image = np.zeros((size[0], size[1], 3), np.uint8)
- 
+
+# updating pixels of stego image acco. to cover_image 
 L = 0
 for i in range(0,size[0]):
     for j in range(0,size[1]):
@@ -38,10 +39,12 @@ for i in range(0,size[0]):
 
         else:
             enc_image[i,j] = image[i,j]
-
+          
+# saving stego image
 cv2.imwrite('encoded_image1.png', enc_image)
 
 
+# Decoding message from stego image
 dec_img = cv2.imread("encoded_image1.png")
 size = dec_img.shape
 
