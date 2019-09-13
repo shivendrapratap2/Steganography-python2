@@ -12,4 +12,4 @@ Lossless compression is a class of data compression algorithms that allows the o
 
 Huffman Encoding is a famous greedy algorithm that is used for the lossless compression of data. It uses variable length encoding where variable length codes are assigned to all the pixels depending on how frequently they occur in the given image. 
 
-![Readme1](https://github.com/shivendrapratap2/Steganography-python2/blob/master/huffman_encoding.png.png)
+![Readme2](https://github.com/shivendrapratap2/Steganography-python2/blob/master/huffman_encoding.png.png)
