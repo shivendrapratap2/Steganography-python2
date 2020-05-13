@@ -1,5 +1,5 @@
 # Steganography-python2 
-Steganography is technique of hiding data into images for secure cmmunication. Here issome code Implementing that using python2.
+Steganography is technique of hiding data into images for secure cmmunication. Here are some code Implementations using python2.
 
 
 ## Histogram Intersection 
